@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 1: Double the Numbers
+        // Objective: Double each number in an array.
+        // Instructions: Given an array of numbers, use the map method to create a new array where each number is doubled.
+        let arr=[2,6,5,4,8,9]
+        let newarr=arr.map(function(val){
+            return val +val;
+
+        })
+        console.log(arr)
+        console.log(newarr, "double of given numbers")
+
+        
+        // Task 2: Using map
+        // Objective: Create a new array with each element squared.
+        // Instructions: Given an array of numbers, use the map method to create a new array where each element is the square of the original element.
+        
+            let arr1=[3,5,6,7,8,4]
+            let a=arr1.map((val)=>{
+                return val*val
+            })
+            console.log(arr1)
+            console.log(a ,'square of given numbers')
+
+
+            // Task 3: Using filter
+            // Objective: Filter out even numbers.
+            // Instructions: Given an array of numbers, use the filter method to create a new array that contains only the odd numbers
+            
+            let arr2=[16,17,2,12,5,42,32,11,51]
+            let b=arr2.filter((val)=>{
+                return val%2!==0
+            })
+            console.log(arr2)
+            console.log(b)
+
+
+            // Task -4 Filter Long Words
+            // Objective: Filter out words longer than 5 characters.
+            // Instructions: Given an array of words, use the filter method to create a new array that contains only words with 5 or fewer characters.
+
+              let words=["hello","Radha","welcome","to","the","javascript"]
+              let w=words.filter((words)=>{
+                return words.length<=5
+              })
+              console.log(w)
+
+    </script>
+</body>
+</html>
